@@ -47,7 +47,7 @@ nav ul li{
     border: 2px solid black;
     font-size:5rem;
     cursor: pointer;
-    font-family: 'Baloo Bhaina ', cursive;
+    font-family: 'Baloo Bhaina ',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* align-content: center; */
 }
 .box:hover{
@@ -55,7 +55,7 @@ nav ul li{
 }
 .imgbox img{
    width: 0px;
-   transition:width 1s ease-in-out;
+   transition:width 0.5s ease-in-out;
 }
 
 #reset{
@@ -69,7 +69,7 @@ nav ul li{
 .line{
     background-color: black;
     /* width: 20vw; */
-    height:3px ;
+    height:7px ;
     position:absolute;
     width: 0;
     background-color: rgb(255, 46, 46);
@@ -103,11 +103,17 @@ nav ul li{
     font-size: 2rem;
 }
 .container{
-grid-template-columns: repeat(3,13vw);
-grid-template-rows: repeat(3,13vw);
+grid-template-columns: repeat(3,10vw);
+grid-template-rows: repeat(3,10vw);
 }
 .gameInfo{
     margin-top: 18px;
     font-size: 0.6rem;
 }
+}
+@media screen and (max-width:450px)
+{
+    .box{
+        font-size: 1.5rem;
+    }
 }
